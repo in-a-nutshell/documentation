@@ -2,9 +2,9 @@ Are you looking to build a docker image where you would need to make AWS API cal
 
 In this blog, we'll look at how we can pass AWS credentials, i.e. AWS access key, secret access key and session token to docker, so that docker can use these credentials to make AWS API calls.
 
-When making any AWS API calls, AWS uses your security credentials to verify who you are and whether you have permission to access the resources that you are requesting. AWS uses the security credentials to authenticate and authorize your requests.[1]
+When making any AWS API calls, AWS uses your security credentials to verify who you are and whether you have permission to access the resources that you are requesting. AWS uses the security credentials to authenticate and authorize your requests(1).
 
-To make a specific AWS API call, you'll need to make sure that the policy attached to the IAM user/role has the necessary permissions to make the AWS API calls. You can read more about policies and permissions in the AWS documentation[2].
+To make a specific AWS API call, you'll need to make sure that the policy attached to the IAM user/role has the necessary permissions to make the AWS API calls. You can read more about policies and permissions in the AWS documentation(2).
 
 Below is a sample Dockerfile and a bash script that can be used to achieve this:
 
